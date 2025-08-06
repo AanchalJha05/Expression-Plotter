@@ -6,7 +6,7 @@ st.text("Examples: x**2 + 2*x + 1   or   sin(x)*y")
 
 user = st.text_input("Enter expression:")
 
-if st.button("Result",user.strip()):
+if user.strip():
     try:
         variables, expression = back(user)
 
